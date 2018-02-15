@@ -24,8 +24,13 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
 	console.log(response);
+	// hide the login button
+	$(".facebookLogin").hide();
+
+
 	$(".jumbotron h1").text(response.name);
-	$("#photo").attr('src',"response.picture.data.url");
+	$("#photo").attr('src',response.picture.data.url);   // don't include "" here
+
 
 
 

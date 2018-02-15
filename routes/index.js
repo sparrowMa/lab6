@@ -3,7 +3,7 @@
  */
 
 exports.view = function(req, res){
-  res.render('index', {
+  res.render('index', {   // here "index" is the handlebars file name
 	'projects': [
 		{ 	'name': 'Waiting in Line',
 		    'image': 'lorempixel.people.1.jpeg',
